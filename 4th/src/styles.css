@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+h1 {
+    font-size: 20px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards {
+    width: 150px;
+    height: 250px;
+    border: 1px solid #ccc;
+    margin: 10px 10px 10px 10px;
+    float: left;
+    background: #f70000;
+    cursor: pointer;
+}
+
+.cards span {
+    font-size: 20px;
+    color: #fefefe;
+    font-weight: bold;
+    display: none;
+}
+
+.dCards {
+    width: 150px;
+    height: 250px;
+    border: 1px solid #ccc;
+    margin: 10px 10px 10px 10px;
+    float: left;
+    background: #f70000;
+    cursor: pointer;
+}
+
+.dCards span {
+    font-size: 20px;
+    color: #fefefe;
+    font-weight: bold;
+    display: none;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    margin-right: 5px;
+}
+.cont {
+    height: auto;
+    width: auto;
+    margin-top: 7%;
+    padding: 20px;
+}
+
+.green {
+    background: #107121 !important;
+}
+
+.green span {
+    display: block;
+}
+
+img {
+    width: auto;
+    height: auto;
+}
