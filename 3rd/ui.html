@@ -1,0 +1,200 @@
+<html>
+<head>
+</head>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<style>
+    body {
+        font-family: arial;
+    }
+    .cont {
+        height: 1000px;
+        width: 400px;
+        border: solid 1px #ccc;
+        border-top: solid 40px #313b43;
+    }
+    .profilepic {
+        background: #ccc;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin: 0 14px 0 10px;
+        float: left;
+    }
+    .profilepic img {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+    }
+    .title {
+        font-size: 19px;
+        font-weight: bold;
+        margin-top: 11px;
+        display: block;
+    }
+    .desc {
+        margin-top: 2px;
+        display: block;
+        font-size: 12px;
+    }
+    .message {
+        background: #e9eff1;
+        padding: 10px 0 20px 7px;
+        border-bottom: 1px solid #ccc;
+        color: #313b43;
+        cursor: pointer;
+    }
+    .busy {
+        background: #e20f44;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: block;
+        position: relative;
+        top: 45px;
+        left: 55px;
+    }
+    .online {
+        background: #4caf50;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: block;
+        position: relative;
+        top: 45px;
+        left: 55px;
+    }
+    .offline {
+        background: #d5a6d6;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: block;
+        position: relative;
+        top: 45px;
+        left: 55px;
+    }
+    .highlight {
+        background: #f9fafb;
+    }
+    .collapse {
+        background: #313b43;
+        border-radius: 50%;
+        border: 1px solid #bbb;
+        position: absolute;
+        display: block;
+        width: 5px;
+        color: #fff;
+        top: 15px;
+        height: 5px;
+        font-size: 16px;
+        padding: 10px;
+        transform: rotate(-271deg);
+        text-align: center;
+        left: 29.2%;
+    }
+    .collapse:before {
+        content: "❯";
+        top: -6px;
+        left: -2px;
+        position: relative;
+        font-size: 13px;
+        color: #bbb;
+        cursor: pointer;
+}
+    }
+</style>
+
+<body>
+
+    <div class="cont">
+        <span class="collapse"></span>
+
+        <div class="message">
+            <div class="profilepic"><img src="https://via.placeholder.com/60"></div>
+            <span class="busy"></span>
+            <span class="title">Max Payne</span>
+            <span class="desc">Aenean sed imperdiet libero. Sed aliquet magna...</span>
+        </div>
+
+        <div class="message">
+            <div class="profilepic"><img src="https://via.placeholder.com/60"></div>
+            <span class="online"></span>
+            <span class="title">Bill Russell</span>
+            <span class="desc">Aenean sed imperdiet libero. Sed aliquet magna...</span>
+        </div>
+
+        <div class="message">
+            <div class="profilepic"><img src="https://via.placeholder.com/60"></div>
+            <span class="online"></span>
+            <span class="title">Andrea Smith</span>
+            <span class="desc">Aenean sed imperdiet libero. Sed aliquet magna...</span>
+        </div>
+
+        <div class="message">
+            <div class="profilepic"><img src="https://via.placeholder.com/60"></div>
+            <span class="offline"></span>
+            <span class="title">Jane Tyler</span>
+            <span class="desc">Aenean sed imperdiet libero. Sed aliquet magna...</span>
+        </div>
+
+        <div class="message">
+            <div class="profilepic"><img src="https://via.placeholder.com/60"></div>
+            <span class="busy"></span>
+            <span class="title">Bob Arob</span>
+            <span class="desc">Aenean sed imperdiet libero. Sed aliquet magna...</span>
+        </div>
+
+        <div class="message">
+            <div class="profilepic"><img src="https://via.placeholder.com/60"></div>
+            <span class="offline"></span>
+            <span class="title">Maria Mole</span>
+            <span class="desc">Aenean sed imperdiet libero. Sed aliquet magna...</span>
+        </div>
+
+        <div class="message">
+            <div class="profilepic"><img src="https://via.placeholder.com/60"></div>
+            <span class="online"></span>
+            <span class="title">Angela Branch</span>
+            <span class="desc">Aenean sed imperdiet libero. Sed aliquet magna...</span>
+        </div>
+
+        <div class="message">
+            <div class="profilepic"><img src="https://via.placeholder.com/60"></div>
+            <span class="busy"></span>
+            <span class="title">James Blunt</span>
+            <span class="desc">Aenean sed imperdiet libero. Sed aliquet magna...</span>
+        </div>
+
+        <div class="message">
+            <div class="profilepic"><img src="https://via.placeholder.com/60"></div>
+            <span class="offline"></span>
+            <span class="title">Aron Swivel</span>
+            <span class="desc">Aenean sed imperdiet libero. Sed aliquet magna...</span>
+        </div>
+
+        <div class="message">
+            <div class="profilepic"><img src="https://via.placeholder.com/60"></div>
+            <span class="offline"></span>
+            <span class="title">Carol Rowe</span>
+            <span class="desc">Aenean sed imperdiet libero. Sed aliquet magna...</span>
+        </div>
+
+        <div class="message">
+            <div class="profilepic"><img src="https://via.placeholder.com/60"></div>
+            <span class="online"></span>
+            <span class="title">Elgine Baylor</span>
+            <span class="desc">Aenean sed imperdiet libero. Sed aliquet magna...</span>
+        </div>
+    </div>
+</body>
+
+<script>
+    var addclass = 'highlight';
+    var $cols = $('.message').click(function(e) {
+    $cols.removeClass(addclass);
+    $(this).addClass(addclass);
+});
+</script>
+
+</html>
