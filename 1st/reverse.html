@@ -1,0 +1,16 @@
+<html>
+   <head>   
+     <script>
+        var str = "one two three four five";
+        var reversed = str.split(" ").map(function(word, i) {
+        return i % 2 == 0 ? word : word.split("").reverse().join(""); }).join(" ");
+        document.write(reversed);
+    </script>
+    <style>
+      body {font-size: 24px; font-weight: bold; color: #325e6b;}
+    </style>     
+   </head>
+   
+   <body>
+   </body>
+</html>
