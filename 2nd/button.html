@@ -1,0 +1,83 @@
+<html>
+<head>
+</head>
+
+<style>
+
+body {
+    background: #e1e5e9;
+}
+
+button {
+  width: 200px;
+  height: 60px;
+  background-color: #1a1f26;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-size: 30px;
+  text-align: left;
+  text-indent: 5px;
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.39);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.39);
+  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.39);
+  cursor: pointer;
+  padding-left: 16px;
+
+  display: block;
+  margin: 0 auto;
+  top: 50%;
+}
+
+button:active {
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.39);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.39);
+  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.39);
+  top: 50.3%;
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #000;
+    clear: both;
+    transform: rotate(-45deg);
+}
+
+button:after {
+content: "Done";
+    color: #fff;
+    width: 83px;
+    height: 30px;
+    display: block;
+    border-top: 10px solid #51ae70;
+    border-bottom: 10px solid #51ae70;
+    border-left: 16px solid #51ae70;
+    border-right: 20px solid #51ae70;
+    background: #51ae70;
+    opacity: 1;
+    right: -2px;
+    top: 0px;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 14px;
+    font-size: 20px;
+    z-index: 1;
+    border-radius: 0 5px 5px 0;
+}
+</style>
+
+<body>
+    <button class="button">&#10003;</button>
+</body>
+
+</html>
