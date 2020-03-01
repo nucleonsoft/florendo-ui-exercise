@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  //uri: string = "http://shibe.online/api/cats?count=1&urls=true&httpsUrls=false";
-  uri: string = "assets/data/pics.json";
+  uri: string = "http://shibe.online/api/cats?count=1&urls=true&httpsUrls=false";
+  //uri: string = "assets/data/pics.json";
 
   constructor(private http: HttpClient) { }
 
