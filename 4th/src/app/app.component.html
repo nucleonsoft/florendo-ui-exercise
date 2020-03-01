@@ -15,22 +15,22 @@
     
     <div id="static" class="cards">
       <span class="num">2</span>
-      <span *ngIf="showImages"></span>
+      <span *ngIf="!showImages"><img [src]='Images' /></span>
     </div>
 
     <div id="static" class="cards">
       <span class="num">3</span>
-      <span *ngIf="showImages"></span>
+      <span *ngIf="!showImages"><img [src]='Images' /></span>
     </div>
 
     <div id="static" class="cards">
       <span class="num">4</span>
-      <span *ngIf="showImages"></span>
+      <span *ngIf="!showImages"><img [src]='Images' /></span>
     </div>
 
     <div class="dCards" *ngFor="let n of newCards" [class.green]="clicked === n" (click)="clicked = (clicked === n ? null :n)">
       <span class="num">{{n+5}}</span>
-      <span *ngIf="showImages"></span>
+      <span *ngIf="!showImages"><img [src]='Images' /></span>
     </div>
 
   </div>
